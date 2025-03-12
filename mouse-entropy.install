@@ -1,0 +1,23 @@
+post_install() {
+  # Print instructions:
+  cat <<EOF
+======================================================================
+To enable mouse-entropy at boot, run:
+  sudo systemctl enable mouse-entropy.service
+  sudo systemctl start mouse-entropy.service
+
+Logs can be viewed via:
+  journalctl -u mouse-entropy.service
+
+======================================================================
+EOF
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  # any cleanup if necessary
+  :
+}

@@ -1,0 +1,11 @@
+mouse-entropy.service
+─────────────────────────────────────────
+[Unit]
+Description=Mouse Entropy (User Service)
+
+[Service]
+ExecStart=/usr/bin/mouse-entropy start
+Type=simple
+
+[Install]
+WantedBy=default.target

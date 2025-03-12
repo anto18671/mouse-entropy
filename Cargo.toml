@@ -1,0 +1,19 @@
+[package]
+name = "mouse-entropy"
+version = "0.1.0"
+edition = "2024"
+description = "A Rust-based tool to collect mouse data directly from /dev/input devices"
+license = "MIT"
+repository = "https://github.com/anto18671/mouse-entropy"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
+chrono = "0.4.40"
+clap = { version = "4.5.32", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+toml = "0.8.20"

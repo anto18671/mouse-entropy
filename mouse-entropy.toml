@@ -1,0 +1,7 @@
+[storage]
+base_directory = "data"             # data directory path
+directory_permissions = 448         # decimal for 0o700 ( drwx------ )
+file_permissions = 384              # decimal for 0o600 ( -rw------- )
+max_file_size_mb = 2                # each file is X MB
+store_4_bytes = false               # if true => store 4 bytes per event; if false => store 3 bytes
+device_path = "/dev/input/mice"
