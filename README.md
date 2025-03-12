@@ -176,6 +176,8 @@ Below is a screenshot of the help command output, followed by a detailed explana
 
 #### Screenshot of the Help Command
 
+![Help Command Screenshot](assets/screenshot.png)
+
 ```
 $ mouse-entropy --help
 ```
